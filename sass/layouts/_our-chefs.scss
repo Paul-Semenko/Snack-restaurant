@@ -1,0 +1,32 @@
+.our-chefs{
+    padding-bottom: 100px;
+    @include mobile{
+        padding-bottom: 21px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        margin-left: -30px;
+        @include mobile{
+            flex-direction: column;
+            margin-left: 0;
+            margin-bottom: -19px;
+        }
+    }
+    &__item{
+        margin-left: 30px;
+        flex-basis: calc((100% - 30px *3)/3);
+        @include mobile{
+            margin-left: 0;
+            margin-bottom: 19px;
+            flex-basis: calc((100% - 19px *1)/1);
+        }
+
+    }
+}
+.history-content__title--gap{
+margin-bottom: 107px;
+@include mobile{
+    margin-bottom: 80px;
+}
+}

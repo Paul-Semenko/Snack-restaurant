@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snack restaurant</title>
+    <link rel="shortcut icon" href="./img/icon-burger-58.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-menu">
+          <a href="" class="header-logo"
+            ><svg width="100" height="67.96" class="header-logo__icon">
+              <use href="./img/icon/sprite.svg#icon-logo"></use></svg
+          ></a>
+          <button type="button" class="burger-menu-btn">
+            <span class="menu-sign"></span>
+            <span class="menu-sign"></span>
+            <span class="menu-sign"></span>
+          </button>
+
+          <ul
+            class="menu-list mobile-nav list menu-list__link--augmentation menu-list__border"
+          >
+            <li class="menu-list__item">
+              <a data-goto=".intro" href="#" class="menu-list__link">ГЛАВНАЯ</a>
+            </li>
+            <li class="menu-list__item">
+              <a data-goto="#our-menu" href="#our-menu" class="menu-list__link"
+                >МЕНЮ</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a data-goto="#history" href="#history" class="menu-list__link"
+                >О НАС</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a
+                data-goto="#order-block"
+                href="#order-block"
+                class="menu-list__link"
+                >БРОНЬ</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <button type="button" class="cart-btn">
+                <svg width="13" height="13" class="icon-cart">
+                  <use href="./img/icon/sprite.svg#icon-shopping-cart"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="menu-list__item mob-appearing">
+              <a
+                href="tel:+999-888-76-54"
+                class="menu-list__link link-resizing"
+              >
+                <svg width="23" height="23" class="icon">
+                  <use href="./img/icon/sprite.svg#icon-phone"></use>
+                </svg>
+
+                +999-888-76-54</a
+              >
+              <p class="menu-list__text">Свяжитесь с нами для бронирования</p>
+            </li>
+            <li class="menu-list__item mob-appearing">
+              <button type="button" class="menu-btn">ЗАКАЗ СТОЛИКА</button>
+            </li>
+          </ul>
+          <ul class="menu-list list menu-list--mob-disappearing">
+            <li class="menu-list__items">
+              <a
+                href="tel:+999-888-76-54"
+                class="menu-list__link link-resizing"
+              >
+                <svg width="23" height="23" class="icon">
+                  <use href="./img/icon/sprite.svg#icon-phone"></use>
+                </svg>
+                +999-888-76-54</a
+              >
+              <p class="menu-list__text">Свяжитесь с нами для бронирования</p>
+            </li>
+            <li class="menu-list__items">
+              <button type="button" class="menu-btn">ЗАКАЗ СТОЛИКА</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro__title">Добро пожаловать в</h1>
+        <p class="intro__text">Наш ресторан</p>
+        <p class="intro__sub-title">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+        <button type="button" class="menu-btn menu-btn--resizing">
+          VIEW MENU
+        </button>
+
+        <div class="intro-cards">
+          <div class="intro-cards__item">
+            <img
+              src="./img/dish.png"
+              alt="dish"
+              width="87"
+              height="87"
+              class="intro-cards__icon"
+            />
+            <h2 class="intro-cards__title">
+              Магическая
+              <span class="intro-cards__title--discoloring">Атмосфера</span>
+            </h2>
+            <p class="intro-cards__text">
+              В нашем заведении царит магическая атмосфера наполненная вкусными
+              ароматами
+            </p>
+          </div>
+          <div class="intro-cards__item">
+            <img
+              src="./img/dish.png"
+              alt="dish"
+              width="87"
+              height="87"
+              class="intro-cards__icon"
+            />
+            <h2 class="intro-cards__title">
+              Лучшее качество
+              <span class="intro-cards__title--discoloring">Еды</span>
+            </h2>
+            <p class="intro-cards__text">
+              Качество нашей<br />
+              Еды - отменное!
+            </p>
+          </div>
+          <div class="intro-cards__item">
+            <img
+              src="./img/dish.png"
+              alt="dish"
+              width="87"
+              height="87"
+              class="intro-cards__icon"
+            />
+            <h2 class="intro-cards__title">
+              Недорогая <span class="intro-cards__title--discoloring">Еда</span>
+            </h2>
+            <p class="intro-cards__text">
+              Стоимость нашей Еды зависит только от ее количества. Качество
+              всегда на высоте!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="history">
+      <div class="container">
+        <div class="history-wrap">
+          <div class="history-content">
+            <h2 class="history-content__title">
+              Наша
+              <span
+                class="history-content__title history-content__title--discoloring"
+                >История</span
+              >
+            </h2>
+            <p class="history-content__text">
+              Как и у любого другого самобытного места, у нас есть своя, особая
+              история. Идея ресторана пришла основателям неожиданно. Во время
+              прогулки по лесу создатель нашего ресторана застрял в сотнях
+              километров от ближайшего населенного пункта. Вдали от цивилизации
+              и связи им пришлось навремя обустровать себе нехитрый быт,
+              добывать и готовить себе еду.
+            </p>
+            <ul class="product-list list">
+              <li class="product-list__item">
+                <p class="product-list__count">93</p>
+                <p class="product-list__name">Напитки</p>
+              </li>
+              <li class="product-list__item">
+                <p class="product-list__count">206</p>
+                <p class="product-list__name">Еда</p>
+              </li>
+              <li class="product-list__item">
+                <p class="product-list__count">71</p>
+                <p class="product-list__name">Закуски</p>
+              </li>
+            </ul>
+          </div>
+          <div class="history-img">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/images@1x.jpg 1x,
+                  ./img/desktop/images@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+
+              <source
+                srcset="
+                  ./img/mobile/history-img-mobile@1x.jpg 1x,
+                  ./img/mobile/history-img-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/images@1x.jpg"
+                alt=""
+                width="539"
+                height="498"
+              />
+            </picture>
+          </div>
+        </div>
+        <div id="order-block">
+          <div class="order-wrap">
+            <h3 class="order-block__title">
+              Отпразднуйте в одном из самых лучших ресторанов.
+            </h3>
+            <h4 class="order-block__text">
+              Только в этом месяце бизнес-ланч от 250 ₽
+            </h4>
+          </div>
+          <button type="button" class="menu-btn order-block__btn--resizing">
+            ЗАКАЗ СТОЛИКА
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="our-dishes">
+      <div class="container">
+        <h2
+          class="history-content__title history-content__title--repositioning"
+        >
+          Наши
+          <span
+            class="history-content__title history-content__title--discoloring"
+            >Блюда</span
+          >
+        </h2>
+        <div class="wrap">
+          <picture>
+            <source
+              srcset="
+                ./img/desktop/our-dishes@1x.jpg 1x,
+                ./img/desktop/our-dishes@2x.jpg 2x
+              "
+              media="(min-width:1110px)"
+            />
+
+            <source
+              srcset="
+                ./img/mobile/pizza-bg-mobile@1x.jpg 1x,
+                ./img/mobile/pizza-bg-mobile@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/desktop/our-dishes@1x.jpg"
+              alt=""
+              width="445"
+              height="478"
+            />
+          </picture>
+          <ul class="menu-icons list">
+            <li class="menu-icons__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/hamburger@1x.jpg 1x,
+                    ./img/desktop/hamburger@2x.jpg 2x
+                  "
+                  media="(min-width:1110px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/mobile/hamburger-mobile@1x.jpg 1x,
+                    ./img/mobile/hamburger-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/desktop/hamburger@1x.jpg"
+                  alt="burger"
+                  width="160"
+                  height="140"
+                />
+              </picture>
+            </li>
+            <li class="menu-icons__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/hamburger@1x.jpg 1x,
+                    ./img/desktop/hamburger@2x.jpg 2x
+                  "
+                  media="(min-width:1110px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/mobile/hamburger-mobile@1x.jpg 1x,
+                    ./img/mobile/hamburger-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/desktop/hamburger@1x.jpg"
+                  alt="burger"
+                  width="160"
+                  height="140"
+                />
+              </picture>
+            </li>
+            <li class="menu-icons__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/hamburger@1x.jpg 1x,
+                    ./img/desktop/hamburger@2x.jpg 2x
+                  "
+                  media="(min-width:1110px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/mobile/hamburger-mobile@1x.jpg 1x,
+                    ./img/mobile/hamburger-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/desktop/hamburger@1x.jpg"
+                  alt="burger"
+                  width="160"
+                  height="140"
+                />
+              </picture>
+            </li>
+          </ul>
+          <ul class="list menu-points">
+            <li class="menu-points__items">
+              <p class="menu-points__name">
+                Гамбургер мини
+                <span class="dots">---------------------</span>220 ₽
+              </p>
+            </li>
+            <li class="menu-points__items">
+              <p class="menu-points__name">
+                Гамбургер мини
+                <span class="dots">---------------------</span>220 ₽
+              </p>
+            </li>
+            <li class="menu-points__items">
+              <p class="menu-points__name">
+                Гамбургер мини
+                <span class="dots">---------------------</span>220 ₽
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="our-menu">
+      <div class="container">
+        <h2
+          class="history-content__title history-content__title--discoloration our-dishes__title"
+        >
+          Наше меню
+        </h2>
+        <div class="our-menu__wrap">
+          <div class="our-menu__card">
+            <span class="our-menu__recommendation">RECOMMENDED</span>
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/abstract@1x.jpg 1x,
+                  ./img/desktop/abstract@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+
+              <source
+                srcset="
+                  ./img/mobile/menu-burger-mobile@1x.jpg 1x,
+                  ./img/mobile/menu-burger-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/abstract@1x.jpg"
+                alt="hamburger"
+                width="225"
+                height="225"
+                class="our-menu__icon"
+              />
+            </picture>
+
+            <span class="our-menu__number"
+              ><span class="our-menu__number--mobile-appearing">$</span>42<span
+                class="mobile-disappearing"
+                >0</span
+              ></span
+            >
+
+            <h3 class="our-menu__title">Гамбургер макси</h3>
+            <p class="our-menu__text">Максимально толстый слой мяса</p>
+            <button type="button" class="our-menu__btn">ЗАКАЗАТЬ</button>
+          </div>
+          <div class="our-menu__card our-menu__card--mobile-disappearing">
+            <img
+              src="./img/desktop/abstract@1x.jpg"
+              alt=""
+              class="our-menu__icon"
+            />
+            <span class="our-menu__number">420</span>
+            <h3 class="our-menu__title">Гамбургер макси</h3>
+            <p class="our-menu__text">Максимально толстый слой мяса</p>
+            <button type="button" class="our-menu__btn">ЗАКАЗАТЬ</button>
+          </div>
+          <div class="our-menu__card our-menu__card--mobile-disappearing">
+            <img
+              src="./img/desktop/abstract@1x.jpg"
+              alt=""
+              class="our-menu__icon"
+            />
+            <span class="our-menu__number">420</span>
+            <h3 class="our-menu__title">Гамбургер макси</h3>
+            <p class="our-menu__text">Максимально толстый слой мяса</p>
+            <button type="button" class="our-menu__btn">ЗАКАЗАТЬ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="single-item">
+          <div class="slider__item">
+            <div class="testimonials-wrap">
+              <ul class="slider-content list">
+                <li class="slider-list">
+                  <p class="testimonials-wrap__text">
+                    Я надолго запомню мой День рождения, проведённый в этом
+                    ресторане! Кусочек родной Армении!!! Отдельное спасибо за
+                    комплепент в виде фруктовой тарелки. Будем рекомендовать
+                    этот ресторан своим друзьям и родственникам также за
+                    рубежом, путешествующих в Санкт-Петербург!!!
+                  </p>
+                </li>
+                <li class="slider-list">
+                  <img
+                    src="./img/desktop/visitor@1x.jpg"
+                    alt=""
+                    width="149"
+                    height="100"
+                    class="testimonials-wrap__icon"
+                  />
+                </li>
+                <li class="slider-list">
+                  <p class="testimonials-wrap__visitor">Посетитель</p>
+                </li>
+                <li><p class="testimonials-wrap__visitor-name">Николай</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="testimonials-wrap">
+              <ul class="slider-content list">
+                <li class="slider-list">
+                  <p class="testimonials-wrap__text">
+                    Я надолго запомню мой День рождения, проведённый в этом
+                    ресторане! Кусочек родной Армении!!! Отдельное спасибо за
+                    комплепент в виде фруктовой тарелки. Будем рекомендовать
+                    этот ресторан своим друзьям и родственникам также за
+                    рубежом, путешествующих в Санкт-Петербург!!!
+                  </p>
+                </li>
+                <li class="slider-list">
+                  <img
+                    src="./img/desktop/visitor@1x.jpg"
+                    alt=""
+                    width="149"
+                    height="100"
+                    class="testimonials-wrap__icon"
+                  />
+                </li>
+                <li class="slider-list">
+                  <p class="testimonials-wrap__visitor">Посетитель</p>
+                </li>
+                <li><p class="testimonials-wrap__visitor-name">Николай</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="testimonials-wrap">
+              <ul class="slider-content list">
+                <li class="slider-list">
+                  <p class="testimonials-wrap__text">
+                    Я надолго запомню мой День рождения, проведённый в этом
+                    ресторане! Кусочек родной Армении!!! Отдельное спасибо за
+                    комплепент в виде фруктовой тарелки. Будем рекомендовать
+                    этот ресторан своим друзьям и родственникам также за
+                    рубежом, путешествующих в Санкт-Петербург!!!
+                  </p>
+                </li>
+                <li class="slider-list">
+                  <img
+                    src="./img/desktop/visitor@1x.jpg"
+                    alt=""
+                    width="149"
+                    height="100"
+                    class="testimonials-wrap__icon"
+                  />
+                </li>
+                <li class="slider-list">
+                  <p class="testimonials-wrap__visitor">Посетитель</p>
+                </li>
+                <li><p class="testimonials-wrap__visitor-name">Николай</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h2 class="history-content__title history-content__title--indent">
+          Галерея
+          <span
+            class="history-content__title history-content__title--discoloring"
+            >Блюд</span
+          >
+        </h2>
+        <ul class="list gallery__list">
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/gallery-one@1x.jpg 1x,
+                  ./img/desktop/gallery-one@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+
+              <source
+                srcset="
+                  ./img/mobile/gallery-one-mobile@1x.jpg 1x,
+                  ./img/mobile/gallery-one-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/gallery-one@1x.jpg"
+                alt=""
+                class="gallery__icon"
+                width="520"
+                height="274"
+              />
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/gallery-two@1x.jpg 1x,
+                  ./img/desktop/gallery-two@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/gallery-two-mobile@1x.jpg 1x,
+                  ./img/mobile/gallery-two-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/gallery-two@1x.jpg"
+                alt="coffee"
+                class="gallery__icon"
+                width="230"
+                height="280"
+              />
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/gallery-three@1x.jpg 1x,
+                  ./img/desktop/gallery-three@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/gallery-three-mobile@1x.jpg 1x,
+                  ./img/mobile/gallery-three-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/gallery-three@1x.jpg"
+                width="254"
+                height="270"
+                alt="soup"
+                class="gallery__icon"
+              />
+            </picture>
+          </li>
+
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/gallery-two@1x.jpg 1x,
+                  ./img/desktop/gallery-two@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/gallery-two-mobile@1x.jpg 1x,
+                  ./img/mobile/gallery-two-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/gallery-two@1x.jpg"
+                alt="coffee"
+                class="gallery__icon"
+                width="230"
+                height="280"
+              />
+            </picture>
+          </li>
+          <li class="gallery__item list">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/gallery-three@1x.jpg 1x,
+                  ./img/desktop/gallery-three@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/gallery-three-mobile@1x.jpg 1x,
+                  ./img/mobile/gallery-three-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/gallery-three@1x.jpg"
+                width="254"
+                height="270"
+                alt="soup"
+                class="gallery__icon"
+              />
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/gallery-one@1x.jpg 1x,
+                  ./img/desktop/gallery-one@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+
+              <source
+                srcset="
+                  ./img/mobile/gallery-one-mobile@1x.jpg 1x,
+                  ./img/mobile/gallery-one-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/gallery-one@1x.jpg"
+                alt=""
+                class="gallery__icon"
+                width="520"
+                height="274"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="our-chefs">
+      <div class="container">
+        <h2 class="history-content__title history-content__title--gap">
+          Наши
+          <span
+            class="history-content__title history-content__title--discoloring"
+            >Повара</span
+          >
+        </h2>
+        <ul class="our-chefs__list list">
+          <li class="our-chefs__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/our-сhef@1x.jpg 1x,
+                  ./img/desktop/our-сhef@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/chef-one-mobile@1x.jpg 1x,
+                  ./img/mobile/chef-one-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/our-сhef@1x.jpg"
+                alt=""
+                width="350"
+                height="462"
+              />
+            </picture>
+          </li>
+          <li class="our-chefs__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/our-chef-two@1x.jpg 1x,
+                  ./img/desktop/our-chef-two@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/chef-two-mobile@1x.jpg 1x,
+                  ./img/mobile/chef-two-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/our-chef-two@1x.jpg"
+                alt=""
+                width="350"
+                height="462"
+              />
+            </picture>
+          </li>
+          <li class="our-chefs__item">
+            <picture>
+              <source
+                srcset="
+                  ./img/desktop/our-chef-three@1x.jpg 1x,
+                  ./img/desktop/our-chef-three@2x.jpg 2x
+                "
+                media="(min-width:1110px)"
+              />
+              <source
+                srcset="
+                  ./img/mobile/chef-three-mobile@1x.jpg 1x,
+                  ./img/mobile/chef-three-mobile@2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/desktop/our-chef-three@1x.jpg"
+                alt=""
+                width="350"
+                height="462"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="without-footer">
+      <div class="container"></div>
+    </section>
+
+    <!------------------- JS LIBRARIES ------------------>
+
+    <script src="./js/menu.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-slider.js"></script>
+  </body>
+</html>

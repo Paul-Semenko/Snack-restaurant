@@ -1,0 +1,22 @@
+.without-footer{
+    width: 100%;
+    height: 732px;
+    background-image: url(../../img/desktop/section-img@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+   
+    @include retina2{
+        background-image: url(../../img/desktop/section-img@2x.jpg);
+    }
+    @include mobile{
+        width: 320px;
+        height: 708px;
+        background-image: url(../../img/mobile/without-footer-mobile@1x.jpg);
+        background-size: 320px 708px;
+        
+        @include retina2{
+            background-image: url(../../img/mobile/without-footer-mobile@2x.jpg);
+
+        }
+    }
+}

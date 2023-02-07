@@ -21,7 +21,14 @@
             margin-bottom: 19px;
             flex-basis: calc((100% - 19px *1)/1);
         }
-
+    }
+    &__img{
+        transform: scale(1);
+        transition: transform, ease-in, var(--animation);
+        &:hover,
+        &focus{
+            transform: scale(1.16);
+        }
     }
 }
 .history-content__title--gap{

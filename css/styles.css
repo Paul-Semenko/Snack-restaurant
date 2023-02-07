@@ -1536,6 +1536,13 @@ img {
     flex-basis: calc((100% - 19px) / 1);
   }
 }
+.our-chefs__img {
+  transform: scale(1);
+  transition: transform, ease-in, var(--animation);
+}
+.our-chefs__img:hover, .our-chefs__imgfocus {
+  transform: scale(1.16);
+}
 
 .history-content__title--gap {
   margin-bottom: 107px;

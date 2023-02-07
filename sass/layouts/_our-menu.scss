@@ -1,20 +1,20 @@
 #our-menu{
     padding-top: 100px;
     padding-bottom: 226px;
-    background-image: url(../../img/desktop/our-menu@1x.jpg);
+    background-image: url(../img/desktop/our-menu@1x.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 1440px 1036px;
     @include retina2{
-        background-image: url(../../img/desktop/our-menu@2x.jpg);
+        background-image: url(../img/desktop/our-menu@2x.jpg);
     }
     @include mobile{
         padding-top: 62px;
         padding-bottom: 106px;
-        background-image: url(../../img/mobile/menu-bg-mobile@1x.jpg);
+        background-image: url(../img/mobile/menu-bg-mobile@1x.jpg);
         background-size: 320px 838px;
         @include retina2{
-            background-image: url(../../img/mobile/menu-bg-mobile@2x.jpg);
+            background-image: url(../img/mobile/menu-bg-mobile@2x.jpg);
             
         }
     }

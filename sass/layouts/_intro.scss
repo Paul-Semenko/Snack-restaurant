@@ -2,17 +2,17 @@
     position: relative;
     padding-top: 203px;
     padding-bottom: 150px;    
-    background-image: url(../../img/desktop/hero-img@1x.jpg);
+    background-image: url(../img/desktop/hero-img@1x.jpg);
     background-repeat: no-repeat;
     background-size:1440px 670px;
     background-position: top;
     @include mobile {
         padding-top: 252px;
         padding-bottom: 75px;
-        background-image: url(../../img/mobile/hero-mobile@1x.jpg);
+        background-image: url(../img/mobile/hero-mobile@1x.jpg);
         background-size: 320px 734px;
         @include retina2{
-            background-image: url(../../img/mobile/hero-mobile@2x.jpg);
+            background-image: url(../img/mobile/hero-mobile@2x.jpg);
         }
         }
     &__title {

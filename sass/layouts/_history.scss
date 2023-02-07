@@ -1,18 +1,18 @@
 #history{
     padding-bottom: 104px;
-    background-image: url(../../img/desktop/bg@1x.jpg);
+    background-image: url(../img/desktop/bg@1x.jpg);
     background-repeat: no-repeat;
     background-size: 1440px, 977px;
     background-position: bottom;
     @include retina2{
-        background-image: url(../../img/desktop/bg@2x.jpg);
+        background-image: url(../img/desktop/bg@2x.jpg);
     }
     @include mobile{
         padding-bottom: 30px;
-        background-image: url(../../img/mobile/bg-mobile@1x.jpg);
+        background-image: url(../img/mobile/bg-mobile@1x.jpg);
         background-size: 320px 357px;
         @include retina2{
-            background-image: url(../../img/mobile/bg-mobile@2x.jpg);
+            background-image: url(../img/mobile/bg-mobile@2x.jpg);
         }
     }
 
